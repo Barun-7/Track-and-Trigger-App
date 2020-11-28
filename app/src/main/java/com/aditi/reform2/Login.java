@@ -123,7 +123,7 @@ public class Login extends AppCompatActivity {
                         String professionFromDB=dataSnapshot.child(userEnteredUsername).child("profession").getValue(String.class);
                         String usernameFromDB=dataSnapshot.child(userEnteredUsername).child("username").getValue(String.class);
 
-                        Intent intent= new Intent(Login.this,UpdateProfile.class);
+                        Intent intent= new Intent(Login.this,DummyPage.class);
 
                         intent.putExtra("username",usernameFromDB); //keyName and the value passed to UpdateProfile
                         intent.putExtra("email",emailFromDB);

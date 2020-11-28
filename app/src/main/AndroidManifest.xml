@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Reform2">
-        <activity android:name=".DummyPage"></activity>
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.Reform2.NoActionBar"></activity>
+        <activity android:name=".AddCategory" />
+        <activity android:name=".activity_items" />
+        <activity android:name=".DummyPage" /> <!-- <activity android:name=".ExampleDialog" /> -->
         <activity android:name=".VerifyPhoneNo" />
         <activity android:name=".UpdateProfile" />
         <activity android:name=".SignUp" />
