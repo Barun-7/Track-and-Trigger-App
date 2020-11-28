@@ -66,7 +66,7 @@ public class AddCategory extends AppCompatActivity {
                                 Log.e("cantdoit", "onComplete: ERROR: " + task.getException().getLocalizedMessage() );
                             }
                             Intent intent= new Intent(AddCategory.this, DummyPage.class);
-                            intent.putExtra("uername",_USERNAME);
+                            intent.putExtra("username",_USERNAME);
                             startActivity(intent);
 
                         }
@@ -81,7 +81,7 @@ public class AddCategory extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent= new Intent(AddCategory.this, DummyPage.class);
-                intent.putExtra("uername",_USERNAME);
+                intent.putExtra("username",_USERNAME);
                 startActivity(intent);
             }
         });

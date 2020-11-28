@@ -99,7 +99,7 @@ public class DummyPage extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //
-                Intent intent= new Intent(DummyPage.this,AddCategory.class);//TODO replace 'AddCategory.class' with the class name of ITEM LIST and check if the given put extra works
+                Intent intent= new Intent(DummyPage.this,ViewItemsActivity.class);
                 intent.putExtra("username", _USERNAME);
                 intent.putExtra("category", categories.get(position));
                 Toast.makeText(DummyPage.this,categories.get(position),Toast.LENGTH_SHORT).show();
